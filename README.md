@@ -60,15 +60,36 @@ D7 = X Y Z
 
 
 ### PROGRAM 
-/*
+```
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Siva Chandran R
+RegisterNumber: 212222240099
 
+ENCODER 
 
+module encoder(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a,b,c;
+or(a,d4,d5,d6,d7);
+or(b,d2,d3,d6,d7);
+or(c,d1,d3,d5,d7);
+endmodule
 
+DECODER
 
+module decoder(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+input a,b,c;
+output d0,d1,d2,d3,d4,d5,d6,d7;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
+endmodule
+```
 
 
 ### RTL LOGIC  
@@ -92,10 +113,13 @@ RegisterNumber:
 
 
 ### TRUTH TABLE 
+### ENCODER:
+![TT1](https://github.com/SivaChandranR07/Experiment-08-Encoders-and-decoders-/assets/113497395/0d4f8d38-092f-41a8-ae7a-6c95f6819834)
 
-
-
+### DECODER:
+![TT2](https://github.com/SivaChandranR07/Experiment-08-Encoders-and-decoders-/assets/113497395/977f365a-eaea-4bb9-99ac-278fe665c1ff)
 
 
 
 ### RESULTS 
+Thus, 8 to 3 Encoder and 3 to 8 Decoder is implemented using verilog and its outputs is validated.
