@@ -73,17 +73,22 @@ RegisterNumber:
 
 ### RTL LOGIC  
 
+### ENCODER:
+![E1](https://github.com/SivaChandranR07/Experiment-08-Encoders-and-decoders-/assets/113497395/0730fea9-e1f8-4f12-a261-fd5b794ee5ac)
 
 
-
-
-
+### DECODER:
+![De1](https://github.com/SivaChandranR07/Experiment-08-Encoders-and-decoders-/assets/113497395/91ac1485-9964-4c60-87c5-59e3d1b5e909)
 
 
 ### TIMING DIGRAMS  
+### ENCODER:
 
+<img width="356" alt="E2" src="https://github.com/SivaChandranR07/Experiment-08-Encoders-and-decoders-/assets/113497395/87f08d82-f81d-4948-9ed7-c382f0e70732">
 
+### DECODER:
 
+<img width="1262" alt="De2" src="https://github.com/SivaChandranR07/Experiment-08-Encoders-and-decoders-/assets/113497395/163c24b3-4f1a-4a89-ab27-29bff131b6a1">
 
 
 ### TRUTH TABLE 
